@@ -1,0 +1,355 @@
+﻿*{padding:0px; margin:0px;}
+html {_overflow-y:scroll;}
+/*****！！页面通用css样式定义开始******/
+/* body的css定义:这里定义页面上下左右边距，页面背景颜色，滚动条颜色样式 */
+body{
+    font-family: Arial, Tahoma,"微软雅黑";    /*文字字体定义 */
+	font-size: 12px;    /*文字大小定义 */
+	color: #5a5a5a; /*文字颜色定义 */
+	}
+
+/* 网站超链接css通用设置 */
+a{text-decoration: none;} /* 链接无下划线,有为underline */ 
+a:link {color: #333333;} /* 未访问的链接 */
+a:visited {color: #333333;} /* 已访问的链接 */
+a:hover{color: #eb1315;	text-decoration: none;} /* 鼠标在链接上 */ 
+a:active {color: #333333;} /* 点击激活链接 */
+
+
+h1,h2,h3,h4,h5,h6{font-size:12px;}
+img{border: 0px;}
+.clear{clear:both; line-height:0; height:0; font-size:0px;}
+.clear:after{content: "."; display: block; height: 0; clear: both; visibility: hidden; }/*清除浮动*/
+
+/*表格样式定义 */ 
+checkbox{border: 0px;}/*选择框样式定义 */ 
+.input{ border:1px solid #CCCCCC; height:20px;line-height:20px} 
+
+li{
+list-style-type:none;
+}
+.header{
+    background:url(../images/headerbg.jpg) repeat-x;
+    background-size:6px 49px;
+    height: 49px;
+    width: 100%;
+    position: relative;
+}
+.header .logo img{
+    width: 221px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+    padding: 3px 0 0 0;
+}
+.fh{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fh img{
+    width: 49px;
+    height: 36px;
+}
+
+.top1RBtn{
+    position: absolute;width: 40px;
+    height: 36px;
+    top: 0px;
+    right: 0px;
+}
+.top1RBtn img{
+    width: 40px;
+    height: 36px;
+    display: block;
+}
+.topSS{
+    display: none;
+    position: absolute;
+    top: 46px;
+    right:0px;
+    z-index: 999;
+}
+.topSSUl{
+    border-radius:30px;
+}
+.topSSUl li{
+	list-style-type:none;
+	font-family:Microsoft YaHei;
+	height:33px;
+	line-height:33px;
+	vertical-align:top;
+    text-align: center;
+    width: 130px;
+    border-bottom: 1px solid #ef7588;
+}
+.topSSUl li a{
+	display:block;
+	color:#ff0011;
+    font-family:Microsoft YaHei;
+    font-size: 14px;
+    background: url(../images/tm.png);
+}
+
+
+.nav{
+    width: 98%;
+    margin: 0px auto 0 auto;
+}
+.nav ul li{
+    width:33.33333%;
+    float: left;
+    margin: 0 0 10px 0;
+}
+.nav ul li img{
+    width:90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.slides img {
+    display: block;
+    width: 100%;
+}
+.flex-direction-nav .flex-prev { display: none;}
+.flex-direction-nav .flex-next { display: none; }
+.flex-control-nav{
+    display: none; 
+}
+.mpDiv{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px 10px;
+    color: #000;
+}
+.mpDiv2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0 20px;
+    color: #242424;
+    line-height: 16px;
+}
+.in_con,.jm,.mp{
+    position: relative;
+}
+.qy{
+    width: 70px;
+    height: 60px;
+    float: left;
+    margin: 0 10px ;
+}
+.show_s .slides li p{
+    overflow: hidden;
+}
+.carousel li {position: relative;}
+.carousel li a{
+    display: block;
+    margin: 0 2px 0 2px;
+    position: relative;
+    background: #decc7a;
+    padding: 3% 0 0 0;
+}
+.carousel li a img{
+    width: 94%;
+    margin: 0 3% 0 3%;
+}
+.carousel li a p{
+    height: 17px;
+    width:100%;
+    text-align: center;
+    color: #fff;
+}
+.carousel{position:relative}
+.show_s{
+    margin: 9.5% 0 0 0;
+}
+.rightTop2{
+    width: 300px;
+    margin: 0 auto;
+}
+.content{
+
+}
+
+.mk{
+    width: 100%;
+}
+.rightTop2  a{
+    background:url(../images/rightTop2lia.png) no-repeat;
+    background-size: 95px 24px;
+    height: 24px;
+    display: block;
+    width:100px;
+    float: left;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    
+}
+.rightTop2  a img{
+    vertical-align: middle;
+    margin: 0 3px 0 0 ;
+    width: 20px;
+    height: 13px;
+    
+}
+.rightTop2 a:hover{
+    background:url(../images/rightTop2lia2.png) no-repeat;background-size: 95px 24px;
+    color: #fff;
+}
+.rightTop2 .selected{
+    background:url(../images/rightTop2lia2.png) no-repeat;background-size: 95px 24px;
+    color: #fff;
+}
+.x_table{
+    margin: 10px 0 0 0;
+}
+.sc{
+    width: 100%;
+    display: block;
+}
+.mpDiv2 span{
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+}
+.footer{
+    height: 30px;
+    background: #6a140f;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.lan{
+    height: 34px;
+    background:url(../images/lan.jpg) repeat-x;
+    background-size: 34px 100%;
+    line-height: 34px;
+    padding: 0 0 0 20px ;
+    color: #fc0d46;
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+    position: relative;
+}
+.nyProShowMore{
+    position: absolute;
+    background:url(../images/cpfl.png) no-repeat;
+    top: 0px;
+    right: 3px;
+    width: 89px;
+    height: 34px;
+    color: #fff;
+    font-size: 12px;
+    background-size: 89px 34px;
+}
+.cpfl{
+    margin: 0 0 0 30px;
+}
+.nyMainProUl{
+    background:url(../images/tm2.png) repeat;
+    color: #ead7d7;
+    display: none;
+}
+.nyMainProUl li{
+    height: 33px;
+    border-bottom: 1px solid #888080;
+    line-height: 33px;
+}
+.nyMainProUl li a{
+    color: #fff;
+    margin:  0 0 0 30px;  
+}
+
+.in_show ul li a img{width:100%;border:1px solid #decc7a}
+.in_show ul li{float:left;margin:5px 0 0 4.2%;width:43%}
+.in_show ul li p{float:left;overflow:hidden;width:100%;height:20px;color:#b60000;text-align:center;line-height:20px;font-size: 14px;background: #fde6a0;margin: 0 auto;border: 1px solid #decc7a;}
+.nytext{
+    margin: 10px 20px;
+    line-height: 23px;
+    color: #0e0e0e;
+}
+.nynewslist{
+    color:#000000;
+    margin: 2px 10px 0 10px;
+}
+.nynewslist li{
+    position: relative;
+    height: 32px;
+    line-height:32px;
+    background: url(../images/point.png) left center no-repeat;
+}
+.nynewslist li a{
+    height: 32px;
+    display: block;
+    padding: 0 0 0 13px;
+    border-bottom: 1px dashed #898989;
+    color: #000000;
+}
+.nynewslist span{
+    position: absolute;
+    right: 0;
+    height: 32px;
+    display:  block;
+    top: 0;
+    color:#000000;
+}
+.tie{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.redtext{
+    font-size: 14px;
+
+    color: #353535;
+}
+.time{
+    font-size: 13px;
+    color: black;
+    margin: 5px 0 0 0;
+}
+.nyrightshow{
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+.nyrightshowtie{
+    color:#028d3a;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+}
+.nyrightshow img{
+    border: 1px solid #646464;
+    max-width: 100%;
+
+}
+/*悬浮电话短信*/
+.floatLink{background:url(../images/floatLink.png) repeat-x;
+                        height:45px;
+                        background-size:1px 45px ;
+                        position:fixed;
+                        bottom:0px;
+                        left: 0px;
+                        width:100%;
+}
+.floatLink a{
+display:block;
+float:left;
+width:25%;
+height:45px;
+color:#FFFFFF;
+text-align:center;
+font-size: 12px;
+background:url(../images/line.png) right top no-repeat;
+background-size:2px 45px ;
+}
+.floatLink a span img{vertical-align:middle;margin: 10px 0 0 0;width: 25px;height: 21px;}
+
+
+.floatLinkBQ{
+    text-align: center;
+    margin: 2px 0 0 0 ;
+}

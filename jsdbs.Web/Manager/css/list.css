@@ -1,0 +1,47 @@
+﻿body 
+{
+	margin:0px 3px;
+	font-size:12px;
+}
+
+.gray{color:#e1e2e3; font-size:12px;}	
+.black{color:#000000; font-size:12px;}
+.sepia{color:#344b50; font-size:12px;}
+.brown{color:#3b6375; font-size:12px;}
+
+.nav{background:#353C44; width:100%; height:24px; margin:3px 0px;}
+.nav_left{background:url(../images/tb.gif) no-repeat 8px 5px; color:#fff; font-size:12px; padding-left:30px; width:250px; float:left; line-height:24px; text-align:left;}
+.nav_right{float:right; width:500px; color:#fff; line-height:24px; text-align:right; padding-right:5px;}
+.nav_right a{color:#fff; text-decoration:none;}
+.nav_right a:hover{ text-decoration:underline;}
+
+.nav_right1{float:right; width:350px; color:#fff; white-space:nowrap; line-height:24px; text-align:right; padding-right:5px;}
+.nav_right1 a{color:#fff; text-decoration:none;}
+.nav_right1 a:hover{ text-decoration:underline;}
+
+.tbl_form{background:#a8c7ce; width:100%;}
+.header{background:#D3EAEF;color:#000; text-align:center; height:20px; line-height:20px; white-space:nowrap;}
+.header a {background:#D3EAEF;color:#000; text-align:center; height:20px; line-height:20px; text-decoration:underline;}
+.lblitem{background:#fff; padding-left:5px; height:20px; line-height:20px; text-align:left;}
+.cbitem{background:#fff; height:20px; text-align:center;}
+.add{background:url(../images/add.gif) no-repeat 0px 3px; padding-left:15px; color:#344B50; width:50px; line-height:20px;}
+.edit{background:url(../images/edit1.gif) no-repeat 0px 3px; padding-left:15px; color:#344B50; width:50px; line-height:20px;}
+.del{background:url(../images/del1.gif) no-repeat 0px 3px; padding-left:15px; color:#344B50; width:50px; line-height:20px;}
+.info{margin:0px 3px; color:#344B50; line-height:20px; }
+.del a ,.info a , .edit a , .add a{color:#3b6375; text-decoration:none;}
+.del a:hover ,.info a:hover , .edit a:hover,.add a:hover{color:blue; text-decoration:underline;}
+
+a.pager{color:#000; text-decoration:none;}
+a.pager:hover{color:Blue; text-decoration:underline;}
+
+.search_label { text-align:right; color:#000; padding-left:5px; font-size:12px; height:25px; line-height:25px;}
+.search_ctrl { text-align:left; padding-left:5px; height:25px;}
+.input_ctrl{ border:#ccc 1px solid; height:18px; margin:2px 0px; background:#fff;}
+.select_ctrl{height:18px; margin:2px 0px;}
+#search{width:99%; border:#a8c7ce 1px solid; margin-bottom:3px;}
+
+.percent{ width:100%;}
+
+.menu_left{ color:#fff; font-size:12px; padding-left:20px; float:left; line-height:24px; text-align:left; white-space:nowrap;}
+
+.menu_left a{ color:#fff; text-decoration:none;}

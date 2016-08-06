@@ -1,0 +1,316 @@
+*{padding:0px; margin:0px;}
+html {_overflow-y:scroll;}
+/*****！！页面通用css样式定义开始******/
+/* body的css定义:这里定义页面上下左右边距，页面背景颜色，滚动条颜色样式 */
+body{font-family: Arial, Tahoma,"微软雅黑";    /*文字字体定义 */font-size: 12px;    /*文字大小定义 */color: #5a5a5a; /*文字颜色定义 */}
+
+/* 网站超链接css通用设置 */
+a{text-decoration: none;} /* 链接无下划线,有为underline */ 
+a:link {color: #333333;} /* 未访问的链接 */
+a:visited {color: #333333;} /* 已访问的链接 */
+a:hover{color: #eb1315;	text-decoration: none;} /* 鼠标在链接上 */ 
+a:active {color: #333333;} /* 点击激活链接 */
+
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+img{border: 0px;}
+.clear{clear:both; line-height:0; height:0; font-size:0px;}
+.clear:after{content: "."; display: block; height: 0; clear: both; visibility: hidden; }/*清除浮动*/
+
+/*表格样式定义 */ 
+checkbox{border: 0px;}/*选择框样式定义 */ 
+.input{ border:1px solid #CCCCCC; height:20px;line-height:20px} 
+
+li{list-style-type:none;}
+*{box-sizing:border-box;}
+
+/*banner start*/
+.slideBox{ position:relative; overflow:hidden; margin:0 auto;/* 设置焦点图最大宽度 */ }
+.slideBox .hd{position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1;display: none;}
+.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:#fff;  }
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative; text-align:center;  }
+.slideBox .bd li img{ background:url(images/loading.gif) center center no-repeat;  vertical-align:top; width:100%;/* 图片宽度100%，达到自适应效果 */}
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0);  }  /* 去掉链接触摸高亮 */
+.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; color:#fff;  text-align:left;  }
+/*banner END*/
+
+
+.header{
+    background:url(../images/headerbg.jpg) repeat-x;
+    background-size:6px 49px;
+    height: 45px;
+    padding: 3px 0 0 0;
+    width: 100%;
+    position: relative;
+}
+.header .logo img{
+    width: 250px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding: 3px 0 0 0;
+}
+.topSSUl  img{
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin: 0 10px 0 5px;
+}
+
+.top1RBtn{
+    position: absolute;width: 40px;
+    height: 36px;
+    top: 4px;
+    left: 0px;
+}
+.top1RBtn img{
+    width: 40px;
+    height: 36px;
+    display: block;
+}
+.topSS{
+    display: none;
+    position: absolute;
+    top: 44px;
+    left:0px;
+    z-index: 999;
+}
+.topSSUl{
+    background:#085aa0;
+}
+.topSSUl li{
+	list-style-type:none;
+	font-family:Microsoft YaHei;
+	height:33px;
+	line-height:33px;
+    width: 130px;
+    border-bottom: 1px solid #538cbd;
+    background:url(../images/jt.png) right center no-repeat;
+    background-size: 17px 15px;
+}
+.topSSUl li:last-child{border-bottom: 0px;}
+.topSSUl li a{
+	display:block;
+	color:#fafafa;
+    font-family:Microsoft YaHei;
+    font-size: 14px;
+
+}
+.nav{
+    width: 98%;
+    margin: 0px auto 0 auto;
+}
+.nav ul li{
+    width:33.33333%;
+    float: left;
+    margin: 0 0 10px 0;
+}
+.nav ul li img{
+    width:90%;
+    display: block;
+    margin: 0 auto;
+}
+.in_nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.in_nav ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.in_nav ul li{
+    float: left;
+    width: 33.333%;
+    height: 50%;
+}
+.in_nav ul li a{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lan{
+    height: 34px;
+    background:url(../images/lan.jpg) repeat-x;
+    background-size: 34px 100%;
+    line-height: 34px;
+    padding: 0 0 0 20px ;
+    color: #fc0d46;
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+    position: relative;
+}
+.nyProShowMore{
+    position: absolute;
+    background:url(../images/anniu2.png) no-repeat;
+    top: 0px;
+    right: 3px;
+    width: 40px;
+    height: 44px;
+    color: #fff;
+    font-size: 12px;
+    background-size: 40px 44px;
+}
+.cpfl{
+    margin: 0 0 0 30px;
+}
+.nyMainProUl{
+    background:#e6e6e6;
+    color: #ead7d7;
+    display: none;
+    position: absolute;
+    top:45px;
+    width: 100%;
+    left: 0px;
+}
+.nyMainProUl li{
+    height: 33px;
+    border: 1px solid #cfcfcf;
+    line-height: 33px;
+    float: left;
+    width: 33.333%;
+    border-top:0px ;
+}
+.nyMainProUl li a{
+    color: #4c4c4c;
+    margin:  0 0 0 30px;  
+}
+.nyName{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+}
+.in_show ul li a img{width:100%;border:2px solid #9c9c9c;box-sizing: border-box;}
+.in_show ul li{float:left;margin:5px 0 0 4.2%;width:43%}
+.in_show ul li p{overflow:hidden;width:100%;height:20px;color:#000;text-align:center;line-height:20px;font-size: 14px;}
+.bqxx{
+    height: 55px;
+    line-height: 20px;
+    text-align: center;
+    border-top:1px solid #cecece ;
+    padding: 8px 0 0 0;
+    color: #6e6e6e;
+}
+.bqxx a{
+    color: #6e6e6e;
+}
+.nyrightshow{
+    margin: 0 auto 10px auto;
+    text-align: center;
+}
+.nyrightshowtie{
+    color:#028d3a;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    line-height: 30px;
+}
+.nyrightshow img{
+    border: 1px solid #646464;
+    max-width: 80%;
+
+}
+.nytext{
+    margin: 10px 20px;
+    line-height: 23px;
+    color: #0e0e0e;
+}
+.nynewslist{
+    color:#000000;
+    margin: 2px 10px 0 10px;
+}
+.nynewslist li{
+    position: relative;
+    height: 32px;
+    line-height:32px;
+    background: url(../images/point.png) left center no-repeat;
+}
+.nynewslist li a{
+    height: 32px;
+    display: block;
+    padding: 0 0 0 13px;
+    border-bottom: 1px dashed #898989;
+    color: #000000;
+}
+.nynewslist span{
+    position: absolute;
+    right: 0;
+    height: 32px;
+    display:  block;
+    top: 0;
+    color:#000000;
+}
+.tie{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.redtext{
+    font-size: 14px;
+
+    color: #353535;
+}
+.time{
+    font-size: 13px;
+    color: black;
+    margin: 5px 0 0 0;
+}
+/*页面最下面按钮样式*/
+.floatLink{
+	height:55px;
+	background: url(../images/footerbg.jpg) repeat-x;
+	position:fixed;
+	bottom:0px;
+	left: 0px;
+	width:100%;
+	z-index:888;
+    background-size: 1px 55px;
+}
+body{
+    padding:  0 0 55px 0;
+}
+.floatLink a{
+	display:block;
+	float:left;
+	width:25%;
+	font-family:Microsoft YaHei;
+    background: url(../images/footerline.jpg) right center no-repeat;
+    background-size: 2px 40px;
+	font-size:18px;
+	color:#FFFFFF;
+	text-align:center;
+}
+.floatLink a.floatALast{
+    background: none;
+}
+.floatLink img{
+	vertical-align:middle;
+    width: 32px;
+    height: 32px;
+    margin: 5px 0 0 0;
+}
+.footerASpan{
+	display:block;
+	font-size:14px;
+	line-height:20px;
+	height:20px;
+}
+
+.floatLink img{
+    width: 27px;
+    height: 27px;
+}
+
+
+.nyMainMessage{color:#000000;font-family:"宋体";line-height:34px;height:34px;}
+.nyMainMessage span{color:#F00;display:block;float:right;margin-right:20px;}
+.txtInput1{border:solid 1px #929292;-moz-border-radius: 10px;-webkit-border-radius: 10px;border-radius:10px;height:36px;width:94%;padding-left:15px;line-height:36px;-moz-box-shadow:2px 2px 2px #929292 inset;-webkit-box-shadow:2px 2px 2px #929292 inset;box-shadow:2px 2px 2px #929292 inset;  }
+.btnInput{height:45px;color:#000000;width:98%;cursor:pointer;font-size:14px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius:5px;border:solid 1px #8f8f8f;background: -moz-linear-gradient(top, #f3f4f3, #dfddda); background: -o-linear-gradient(top,#f3f4f3, #dfddda); background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f3f4f3), to(#dfddda));box-shadow: 1px 2px 3px #888888;}
+.btnTJ{margin:10px 0;}
+/*message end*/

@@ -1,0 +1,170 @@
+/* CSS Document */
+*{padding:0px; margin:0px;}
+html {_overflow-y:scroll;}
+/*****！！页面通用css样式定义开始******/
+/* body的css定义:这里定义页面上下左右边距，页面背景颜色，滚动条颜色样式 */
+body{
+    font-family: Arial, Tahoma,"微软雅黑";    /*文字字体定义 */
+	font-size: 12px;    /*文字大小定义 */
+	color: #5a5a5a; /*文字颜色定义 */
+	background:url(../images/bg.jpg) no-repeat top center #84c5e6;
+	background-size:100% 100%;
+	}
+
+/* 网站超链接css通用设置 */
+a{text-decoration: none;} /* 链接无下划线,有为underline */ 
+a:link {color: #333333;} /* 未访问的链接 */
+a:visited {color: #333333;} /* 已访问的链接 */
+a:hover{color: #eb1315;	text-decoration: none;} /* 鼠标在链接上 */ 
+a:active {color: #333333;} /* 点击激活链接 */
+
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+img{border: 0px;}
+.clear{clear:both; line-height:0; height:0; font-size:0px;}
+.clear:after{content: "."; display: block; height: 0; clear: both; visibility: hidden; }/*清除浮动*/
+
+/*表格样式定义 */ 
+checkbox{border: 0px;}/*选择框样式定义 */ 
+.input{ border:1px solid #CCCCCC; height:20px;line-height:20px} 
+img{ max-width:100%;}
+li{
+list-style-type:none;
+}
+*{
+	box-sizing:border-box;
+}
+/*banner*/
+/* Browser Resets
+*********************************/
+.flexslider2 .slides  li img{display:block;max-width:100%;margin:0 auto;border-radius:4px}
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;position:relative} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li  p{position:absolute;bottom:0;left:0; text-align:center;width:100%;z-index:99;background:rgba(0,0,0,0.4);color:#eee;line-height:26px;height:26px }
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {position: relative;}
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.flexslider .slides { zoom: 1; }
+.carousel li { margin-right: 8px; }
+/* Direction Nav */
+.flex-direction-nav {*height: 0;display:none}
+.flex-direction-nav a  { text-decoration:none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 50%; z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); text-shadow: 1px 1px 0 rgba(255,255,255,0.3); -webkit-transition: all .2s ease; -moz-transition: all .2s ease; transition: all .2s ease; }
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.flex-direction-nav a:before  {line-height:1; display: inline-block;}
+.flex-direction-nav a.flex-next:before  {}
+/* Pause/Play */
+.flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
+.flex-pauseplay a:before  { font-family: "flexslider-icon"; font-size: 20px; display: inline-block; content: '\f004'; }
+.flex-pauseplay a:hover  { opacity: 1; }
+.flex-pauseplay a.flex-play:before { content: '\f003'; }
+/* Control Nav */
+.flex-control-nav {width: 100%; text-align:right}
+.flexslider .flex-control-nav{position: absolute; bottom:5px; padding-right:20px;display:none}
+.carousel{position:relative}
+.carousel .flex-control-nav{display:none}
+.flex-control-nav li {margin: 0 4px; display: inline-block; height:9px;width:9px;zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background:#CCC;cursor: pointer;line-height:0;font-size:0;overflow:hidden;border-radius:20px}
+.flex-control-paging li a:hover {}
+.flex-control-paging li a.flex-active { background:#06F; cursor: default; }
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+.flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
+.flex-direction-nav .flex-next { opacity: 1; right: 10px;}
+/*banner END*/
+.header{ background:url(../images/topbg_01.jpg) no-repeat top center #05508c; height:40px; }
+.logo {padding-top:5px; position:absolute;text-align:center; width:100%; padding-right:25px;}
+.logo img{ width:260px; }
+.header .menu{ position:absolute; right:10px; top:6px; cursor:pointer}
+.header .menu img{ width:25px;}
+.nav-m{ background:url(../images/menu_02.png) no-repeat; background-size:320px; width:320px; height:330px; margin:0 auto; margin-top:-4px;}
+.content{ position:relative }
+.tell{ background:url(../images/logo_10.png) no-repeat top center; background-size:250px 40px; position:absolute; z-index:99; width:100%; text-align:center; top:5px; height:40px; line-height:26px; color:#fff; font-size:16px;}
+.nav{ right:0px; top:0px; width:100px; background:rgba(5,80,140,0.66); z-index:290; font-size:16px;position:absolute; display:none}
+.nav li{ text-align:center; line-height:23px; height:42px;z-index:99992; line-height:42px; border-bottom:1px dashed #ffffff; width:75px; margin:0 auto;  }
+.nav li a{ color:#fff; display:block}
+.nav li:last-child{ border-bottom:none}
+.m-nav{ width:320px; margin:0 auto; position:relative;font-size:10px ; z-index:99; background:url(../images/nav_02.png) no-repeat 0 0; height:222.5px; background-size:320px 222.5px; margin-top:-5%; display:block; overflow:hidden}
+.m-nav a{color:#fff}
+.m-nav li{ position:absolute; width:93px; height:71px;text-align:center;}
+.m-nav li i{ font-style:normal; color:#7593b8; display:block ; margin-top:-3px; }
+.m-nav li a span{display:block;font-size:13px; margin-top:33px;}
+.m-nav li.li1{left:27px; top:49px;}
+.m-nav li.li2{left:120px; top:49px;}
+.m-nav li.li3{left:210px; top:49px;}
+.m-nav li.li4{left:74px; top:124px;}
+.m-nav li.li5{left:168px; top:124px;}
+.main{ margin-top:-5px; color:#333; min-height:200px;}
+.title{ font-size:14px;  line-height:34px;width:98%; margin:0 auto; position:relative; border-bottom:2px solid #228dd5; height:34px;}
+.title span{ display:block; width:100px; height:30px; float:left; color:#fff; background:#228dd5;font-size:16px; text-align:center; margin-bottom:2px;}
+.title i{ display:block; float:left; color:#228dd5; font-style:normal; margin-left:5px;}
+.main { position:relative}
+.main .img{ margin-bottom:5px; text-align:center}
+.main H2{ text-align:center; font-size:14px;}
+.main .conm{width:98%; margin:5px auto 0; line-height:22px;}
+.main a{ color:#333;}
+.product{ width:98%; overflow:hidden; margin:10px auto 0;}
+.product li{ width:100%; margin-bottom:5px;padding:5px; border:2px solid #9bbb8f; overflow:hidden}
+.product li a{ width:100%;  line-height:22px;  }
+.product li img{ width:30%;float:left; padding:2px; border:1px solid #376281;}
+.product li p{ width:69%; float:right; margin-top:4%;}
+.fenlei{ position:absolute; right:0px; top:5px; width:54px; cursor:pointer}
+.fl-con{background:rgba(5,80,140,0.86); position:absolute; right:1%; top:40px; width:220px; display:none; z-index:92;}
+.fl-con li{ border-bottom:1px dashed #fff; text-align:center;height:30px; line-height:30px; font-size:14px; }
+.fl-con li a{ color:#fff;}
+.product-img{ text-align:center;width:96%; margin:6px auto;}
+.product-img img{border:1px solid #afa9a9; padding:2px;}
+.main .titlex{text-align:center; font-size:14px; line-height:26px; height:26px;}
+.news{margin:10px auto; overflow:hidden; width:98%;}
+.news li{ width:100%; line-height:28px; height:28px;border-bottom:1px dashed #333;text-indent:10px; margin-bottom:8px;  position:relative}
+.news li a{ overflow:hidden;}
+.news li span{ position:absolute; right:0px; top:0px;}
+.news-conx{ width:96%; margin:10px auto;}
+.news-conx h1{ text-align:center;font-size:14px; line-height:25px; }
+.news-conx .time{ text-align:center;line-height:23px;}
+.news-conx .news-c{ line-height:22px;margin:5px auto;}
+.footer{ text-align:center; color:#fff; font-size:14px; line-height:23px; background:rgba(68,138,202,0.18);margin-bottom:65px; border-top:2px solid #00479d; padding:5px 0px; margin-top:10px;}
+.floatLink{ position:fixed; bottom:0px; left:0px; width:100%;height:65px;color:#fff;z-index:90; background:url(../images/footbg_03.jpg) repeat-x;}
+.floatLink .foot1{width: 100%;}
+.floatLink .foot1 a{display:block; width: 33.333%;float: left; padding-top:7px; text-align:center; background:url(../images/foot_14.png) no-repeat right top; background-size:2px 65px;color:#fff;height:65px;}
+.floatLink .foot1 img{ width:28px; vertical-align:middle}
+.floatLink .foot1 span{ display:block; font-size:13px; text-shadow:1px 1px 1px #064f8d; }
+.floatLink .foot1 .lx{ background:none;}
+.floatLink .foot1 i{ font-style:normal; font-size:10px; margin-top:-2px;display:block;}
+@media screen and (min-width:500px)  {
+.m-nav{ width:500px;height:345px; background-size:500px 345px;font-size:12px ;}
+.m-nav li{ width:139px; height:125px;}
+.m-nav li a span{font-size:18px; margin-top:71px;}
+.m-nav li a i{margin-top:0px;}
+.m-nav li.li1{left:49px; top:59px;}
+.m-nav li.li2{left:190px; top:59px;}
+.m-nav li.li3{left:330px; top:59px;}
+.m-nav li.li4{left:122px; top:185px;}
+.m-nav li.li5{left:262px; top:185px;}
+.m-nav li.li4 a span,.m-nav li.li5 a span{margin-top:61px;}
+}
+
